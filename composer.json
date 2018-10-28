@@ -1,9 +1,9 @@
 {
-    "name": "laravel-admin-ext/ueditor",
+    "name": "codingyu/ueditor",
     "description": "UEditor extension for laravel-admin",
     "type": "library",
     "keywords": ["laravel-admin", "extension", "ueditor"],
-    "homepage": "https://github.com/codingyu/ueditor",
+    "homepage": "https://github.com/codingyu/UEditor",
     "license": "MIT",
     "authors": [
         {
