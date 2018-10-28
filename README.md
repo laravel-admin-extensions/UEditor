@@ -6,7 +6,7 @@ UEditor extension for laravel-admin
 ## 安装
 
 ```bash
-composer require laravel-admin-ext/ueditor
+composer require codingyu/ueditor
 ```
 
 发布 `overtrue/laravel-ueditor` 的资源
