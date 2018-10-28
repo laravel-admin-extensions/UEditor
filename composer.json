@@ -1,0 +1,35 @@
+{
+    "name": "laravel-admin-ext/ueditor",
+    "description": "UEditor extension for laravel-admin",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "ueditor"],
+    "homepage": "https://github.com/codingyu/ueditor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "codingyu",
+            "email": "everceyu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6",
+        "overtrue/laravel-ueditor": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codingyu\\Ueditor\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codingyu\\Ueditor\\UeditorServiceProvider"
+            ]
+
+        }
+    }
+}
