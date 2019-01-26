@@ -6,7 +6,7 @@
 
         @include('admin::form.error')
 
-        <script id="{{$id}}" name="{{$name}}" type="text/plain">{!! old($column, $value) !!}</script>
+        <textarea id="{{$id}}" name="{{$name}}">{!! old($column, $value) !!}</textarea>
 
         @include('admin::form.help-block')
 
