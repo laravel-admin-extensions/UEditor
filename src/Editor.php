@@ -17,7 +17,7 @@ class Editor extends Field
     {
         $name = $this->formatName($this->column);
 
-        $config = Ueditor::config('config');
+        $config = Ueditor::config('config') ?? [];
 
         $config = json_encode(array_merge($config, $this->options));
 
