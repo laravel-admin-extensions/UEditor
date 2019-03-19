@@ -13,8 +13,8 @@ class UeditorServiceProvider extends ServiceProvider
      */
     public function boot(Ueditor $extension)
     {
-        if (! Ueditor::boot()) {
-            return ;
+        if (!Ueditor::boot()) {
+            return;
         }
 
         if ($views = $extension->views()) {
@@ -22,7 +22,7 @@ class UeditorServiceProvider extends ServiceProvider
         }
 
         Admin::booting(function () {
-            Form::extend('editor', Editor::class);
+            Form::extend(Ueditor::config('field_type', 'UEditor'), Editor::class);
         });
     }
 }

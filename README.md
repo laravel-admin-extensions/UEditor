@@ -29,7 +29,8 @@ php artisan vendor:publish --provider='Overtrue\LaravelUEditor\UEditorServicePro
             // 编辑器的前端配置 参考：http://fex.baidu.com/ueditor/#start-config
             'config' => [
                 'initialFrameHeight' => 400, // 例如初始化高度
-            ]
+            ],
+            // 'field_type' => '自定义名字'
         ]
     ]
 
@@ -39,12 +40,28 @@ php artisan vendor:publish --provider='Overtrue\LaravelUEditor\UEditorServicePro
 
 ## 使用
 
+### 2.*
+组件名可配置，默认 `UEditor`
+
+
+在form表单中使用它：
+```php
+$form->UEditor('content');
+// options 中参数会覆盖 extensions.ueditor.config 中参数
+$form->UEditor('content')->options(['initialFrameHeight' => 800]);
+
+// 如果 extensions.ueditor.field_type 定义为 xxxEditor
+// $form->xxxEditor('content');
+```
+
+### 1.*
 在form表单中使用它：
 ```php
 $form->editor('content');
-
 // options 中参数会覆盖 extensions.ueditor.config 中参数
 $form->editor('content')->options(['initialFrameHeight' => 800]);
+
+// 升级2.* 后，不改代码兼容 1.*：可以配置  extensions.ueditor.field_type 为 editor
 ```
 
 ## 大感谢
