@@ -16,6 +16,8 @@ class Editor extends Field
     public function render()
     {
         $name = $this->formatName($this->column);
+        
+        $jsId = \Illuminate\Support\Str::studly($this->id);
 
         $config = Ueditor::config('config', []);
 
@@ -28,9 +30,9 @@ class Editor extends Field
 
 window.UEDITOR_CONFIG.serverUrl = '{$laravel_ueditor_route}';
 UE.delEditor("{$this->id}");
-var ue_{$this->id} = UE.getEditor('{$this->id}', {$config});
-ue_{$this->id}.ready(function() {
-    ue_{$this->id}.execCommand('serverparam', '_token', '$token');
+var ue_{$jsId} = UE.getEditor('{$this->id}', {$config});
+ue_{$jsId}.ready(function() {
+    ue_{$jsId}.execCommand('serverparam', '_token', '$token');
 });
 
 EOT;
