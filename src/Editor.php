@@ -17,7 +17,7 @@ class Editor extends Field
     {
         $name = $this->formatName($this->column);
         
-        $jsId = \Illuminate\Support\Str::studly($this->id);
+        $jsId = \Illuminate\Support\Str::studly(\Illuminate\Support\Str::slug($this->id));
 
         $config = Ueditor::config('config', []);
 
