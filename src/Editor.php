@@ -21,7 +21,7 @@ class Editor extends Field
 
         $config = Ueditor::config('config', []);
 
-        $config = json_encode_options(array_merge($config, $this->options));
+        $config = json_encode(array_merge($config, $this->options));
 
         $laravel_ueditor_route = config('ueditor.route.name');
         $token = csrf_token();
