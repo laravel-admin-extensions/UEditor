@@ -43,7 +43,7 @@ php artisan vendor:publish --provider='Overtrue\LaravelUEditor\UEditorServicePro
 
 ## 使用
 
-### 2.*|3.*
+### 2.* | 3.*
 组件名可配置，默认 `UEditor`
 
 
