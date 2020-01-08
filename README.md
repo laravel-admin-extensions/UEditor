@@ -12,9 +12,9 @@ composer require codingyu/ueditor
 发布资源
 ```bash
 // V3.*
-php artisan vendor:publish --provider='Codingyu\LaravelUEditor\UEditorServiceProvider'
+php artisan vendor:publish --provider=Codingyu\LaravelUEditor\UEditorServiceProvider
 // V2.*
-php artisan vendor:publish --provider='Overtrue\LaravelUEditor\UEditorServiceProvider'
+php artisan vendor:publish --provider=Overtrue\LaravelUEditor\UEditorServiceProvider
 ```
 
 ## 配置
