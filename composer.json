@@ -1,5 +1,5 @@
 {
-    "name": "codingyu/ueditor",
+    "name": "imnpc/ueditor",
     "description": "UEditor extension for laravel-admin",
     "type": "library",
     "keywords": [
@@ -7,7 +7,7 @@
         "extension",
         "ueditor"
     ],
-    "homepage": "https://github.com/codingyu/UEditor",
+    "homepage": "https://github.com/imnpc/UEditor",
     "license": "MIT",
     "authors": [
         {
