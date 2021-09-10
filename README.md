@@ -6,15 +6,15 @@ UEditor extension for laravel-admin
 ## 安装
 
 ```bash
-composer require codingyu/ueditor
+composer require imnpc/ueditor
 ```
 
 发布资源
 ```bash
 // V3.*
-php artisan vendor:publish --provider=Codingyu\LaravelUEditor\UEditorServiceProvider
+php artisan vendor:publish --provider=Codingyu\\LaravelUEditor\\UEditorServiceProvider
 // V2.*
-php artisan vendor:publish --provider=Overtrue\LaravelUEditor\UEditorServiceProvider
+php artisan vendor:publish --provider=Overtrue\\LaravelUEditor\\UEditorServiceProvider
 ```
 
 ## 配置
