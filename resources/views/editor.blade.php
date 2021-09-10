@@ -6,7 +6,7 @@
 
         @include('admin::form.error')
 
-        <textarea id="{{$id}}" name="{{$name}}">{!! old($column, $value) !!}</textarea>
+        <textarea id="{{$id}}" name="{{$name}}" {!! $attributes !!} >{!! old($column, $value) !!}</textarea>
 
         @include('admin::form.help-block')
 
