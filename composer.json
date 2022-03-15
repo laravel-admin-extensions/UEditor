@@ -1,5 +1,5 @@
 {
-    "name": "codingyu/ueditor",
+    "name": "imnpc/ueditor",
     "description": "UEditor extension for laravel-admin",
     "type": "library",
     "keywords": [
@@ -7,7 +7,7 @@
         "extension",
         "ueditor"
     ],
-    "homepage": "https://github.com/codingyu/UEditor",
+    "homepage": "https://github.com/imnpc/UEditor",
     "license": "MIT",
     "authors": [
         {
@@ -18,7 +18,7 @@
     "require": {
         "php": ">=7.0.0",
         "encore/laravel-admin": "~1.6",
-        "codingyu/laravel-ueditor": "~2.0"
+        "imnpc/laravel-ueditor": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.0"
